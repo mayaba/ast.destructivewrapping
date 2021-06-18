@@ -1,0 +1,5 @@
+ca\concordia\soen6591\assignment2\detecters\StaticAnalyzer.class
+ca\concordia\soen6591\assignment2\utility\CUParser.class
+ca\concordia\soen6591\assignment2\visitors\CatchClauseVisitor$1.class
+ca\concordia\soen6591\assignment2\utility\FileWalker.class
+ca\concordia\soen6591\assignment2\visitors\CatchClauseVisitor.class
