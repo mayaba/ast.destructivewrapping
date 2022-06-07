@@ -25,7 +25,8 @@ public class StaticAnalyzer {
 	
 	public static void main(String[] args) throws IOException {
 		
-		final String dirPath = args[0];
+
+		final String dirPath = "PLEASE ADD THE PATH TO THE JAVA PROJECT";
 		final FileWalker fileWalker = new FileWalker(dirPath);
 		
 		logger.info("Starting the program ...");

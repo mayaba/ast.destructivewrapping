@@ -26,7 +26,7 @@ public class CUParser {
 
 	// parse java file content
 	private CompilationUnit parse(String str) {
-		ASTParser parser = ASTParser.newParser(AST.JLS15);
+		ASTParser parser = ASTParser.newParser(AST.JLS4);
 		parser.setKind(ASTParser.K_COMPILATION_UNIT);
 		parser.setSource(str.toCharArray());
 		parser.setResolveBindings(true);

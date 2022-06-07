@@ -37,12 +37,14 @@
 			<version>3.2.0-v20070530</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.eclipse.jdt/launching -->
-		<dependency>
-			<groupId>org.eclipse.jdt</groupId>
-			<artifactId>launching</artifactId>
-			<version>3.3.0-v20070510</version>
-		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.eclipse.jdt/org.eclipse.jdt.core -->
+<dependency>
+    <groupId>org.eclipse.jdt</groupId>
+    <artifactId>org.eclipse.jdt.core</artifactId>
+    <version>3.7.1</version>
+</dependency>
+
 
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>
