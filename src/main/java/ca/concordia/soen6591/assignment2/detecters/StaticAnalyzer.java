@@ -26,7 +26,7 @@ public class StaticAnalyzer {
 	public static void main(String[] args) throws IOException {
 		
 
-		final String dirPath = "C:\\Users\\Raheem\\Desktop\\ast example\\guava";
+		final String dirPath = "INSERT THE PATH TO THE DESTINATION JAVA PROJECT";
 		final FileWalker fileWalker = new FileWalker(dirPath);
 		
 		logger.info("Starting the program ...");
