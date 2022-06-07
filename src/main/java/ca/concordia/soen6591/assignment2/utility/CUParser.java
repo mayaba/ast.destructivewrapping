@@ -7,6 +7,8 @@ import org.eclipse.jdt.core.dom.AST;
 import org.eclipse.jdt.core.dom.ASTParser;
 import org.eclipse.jdt.core.dom.CompilationUnit;
 
+import ca.concordia.soen6591.assignment2.detecters.StaticAnalyzer;
+
 public class CUParser {
 
 	public CompilationUnit parseCU(String filePath) {
@@ -17,8 +19,7 @@ public class CUParser {
 			parsedUnit = parse(fileContent);
 			return parsedUnit;
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			StaticAnalyzer.logger.fatal(e.getCause() + " exception happned! in class " + filePath.toString() + " because the class is abstract", e);
 		}
 		
 		return parsedUnit;
@@ -43,7 +44,6 @@ public class CUParser {
 		char[] buf = new char[10];
 		int numRead = 0;
 		while ((numRead = reader.read(buf)) != -1) {
-//			System.out.println(numRead);
 			String readData = String.valueOf(buf, 0, numRead);
 			fileData.append(readData);
 			buf = new char[1024];

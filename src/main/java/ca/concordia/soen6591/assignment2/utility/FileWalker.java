@@ -11,7 +11,6 @@ import java.util.stream.Stream;
 public class FileWalker {
 	private String dirPath;
 	
-	//"C:\\Users\\Raheem\\Downloads\\guava-master\\"
 	
 	public FileWalker(String dirPath) {
 		this.dirPath = dirPath;

@@ -14,7 +14,7 @@ import ca.concordia.soen6591.assignment2.utility.FileWalker;
 import ca.concordia.soen6591.assignment2.visitors.CatchClauseVisitor;
 
 public class StaticAnalyzer {
-	static final Logger logger = LogManager.getLogger(StaticAnalyzer.class);
+	public static final Logger logger = LogManager.getLogger(StaticAnalyzer.class);
 	static final CUParser cuParser = new CUParser();
 	static int totalDetected = 0, totalCatchClauses = 0;
 	
@@ -26,7 +26,7 @@ public class StaticAnalyzer {
 	public static void main(String[] args) throws IOException {
 		
 
-		final String dirPath = "PLEASE ADD THE PATH TO THE JAVA PROJECT";
+		final String dirPath = "C:\\Users\\Raheem\\Desktop\\ast example\\guava";
 		final FileWalker fileWalker = new FileWalker(dirPath);
 		
 		logger.info("Starting the program ...");
@@ -40,7 +40,7 @@ public class StaticAnalyzer {
 				totalDetected += exceptionVisitor.getTotalDetected();
 				totalCatchClauses += exceptionVisitor.getTotalCatchClauses();
 			} catch (Exception e) {
-				logger.fatal("Exception happned!", e);
+				logger.fatal("Exception happned! in file " + path.toString(), e);
 			}
 			
 		}
